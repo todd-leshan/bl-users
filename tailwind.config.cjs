@@ -4,13 +4,19 @@ module.exports = {
     './index.html',
     './src/**/*.{js,ts,jsx,tsx}',
   ],
-  presets: [],
   theme: {
     colors: {
-      white: #ffffff,
-      black: #000000,
-      primary: #ffdacd,
-      secondary: #ff516a,
+      white: "#ffffff",
+      black: "#000000",
+      primary: "#FF526B",
+      secondary: "#AD0A0A",
+      third: "#00004C",
+      theme: {
+        1: "#FFDACD",
+        2: "#FFFAEE",
+        3: "#FFED91",
+        4: "#31C7BF",
+      }
     }
   },
   corePlugins: {

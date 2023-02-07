@@ -3,7 +3,16 @@ const tsconfigPaths = require("vite-tsconfig-paths");
 
 module.exports = {
 	stories: ['../src/**/*.stories.@(js|jsx|ts|tsx)'],
-	addons: [],
+	addons: [
+		{
+			name: '@storybook/addon-postcss',
+			options: {
+				postcssLoaderOptions: {
+					implementation: require('postcss'),
+				},
+			},
+		},
+	],
 	framework: '@storybook/react',
 	core: {
 		builder: '@storybook/builder-vite',

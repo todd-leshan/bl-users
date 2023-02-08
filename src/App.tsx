@@ -115,7 +115,7 @@ function App() {
                                             <span>{`${suite}, ${street}, ${city}, ${zipcode}`}</span>
                                             <div className="flex flex-row items-center">
                                                 <Icon size="xs" name={IconsName.mark} className="mr-2" />
-                                                <span>({lat}, {lng})</span>
+                                                <span className="text-xs">({lat}, {lng})</span>
                                             </div>
                                         </div>
                                     </div>
@@ -128,7 +128,7 @@ function App() {
                                             </a>
                                             <a className="flex flex-row items-center" href={`mailto:${email}`}>
                                                 <Icon size="xs" name={IconsName.email} className="mr-2" />
-                                                <span>{email}</span>
+                                                <span className="break-all">{email}</span>
                                             </a>
                                             <a className="flex flex-row items-center" href={`https://${website}`} target="_blank">
                                                 <Icon size="xs" name={IconsName.web} className="mr-2" />

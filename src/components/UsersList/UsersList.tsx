@@ -13,13 +13,12 @@ const COL_4_WIDTH = 'w-full lg:w-1/4';
 const COL_5_WIDTH = 'w-full lg:w-[10%]';
 
 export type UsersListProps = {
-    users: [User],
+    users: User[],
     refetchUsers: () => void,
 };
 
 export const UsersList = ({ users, refetchUsers } : UsersListProps) => {
-    console.log(users);
-    const [usersInView, setUsersInView] = useState<[User]>(users);
+    const [usersInView, setUsersInView] = useState<User[]>(users);
     const [reloadNoti, setReloadNoti] = useState(false);
 
     const removeUserFromList = (id: number) => {

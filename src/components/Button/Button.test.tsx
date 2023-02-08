@@ -3,7 +3,7 @@ import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { Button } from "./Button";
 
-describe('Button component', function () {
+describe('Button component', () => {
     it('should render button contents', () => {
         render(<Button>Hello World</Button>);
         const button = screen.getByText('Hello World');

@@ -4,4 +4,8 @@ module.exports = {
 	verbose: true,
 	testEnvironment: 'jest-environment-jsdom',
 	setupFilesAfterEnv: ['<rootDir>/src/testSetup.ts'],
+	moduleNameMapper: {
+		'^@/(.*)$': '<rootDir>/src/$1',
+		'\\.(jpg|ico|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2)$': '<rootDir>/__mocks__/fileMock.js',
+	},
 };

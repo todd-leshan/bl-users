@@ -1,13 +1,12 @@
 import React from 'react';
 import classNames, { Argument } from 'classnames';
+import {BaseProps, ChildProps} from "../../types/props";
 
 type ButtonColor = 'primary' | 'secondary' | 'custom';
 
-export interface ButtonProps {
+export interface ButtonProps extends BaseProps, ChildProps {
     onClick?: (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void;
-    children?: React.ReactNode;
     color?: ButtonColor;
-    className?: string;
     disabled?: boolean;
 }
 

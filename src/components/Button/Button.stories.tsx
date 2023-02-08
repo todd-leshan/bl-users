@@ -1,5 +1,5 @@
 import React from 'react';
-import { Mata, Story } from '@storybook/react';
+import { Meta, Story } from '@storybook/react';
 
 import { Button, ButtonProps } from "./Button";
 

@@ -1,9 +1,9 @@
 import { ReactNode } from 'react';
 
 export interface BaseProps {
-    className?: string;
+	className?: string;
 }
 
 export interface ChildProps {
-    children?: ReactNode;
+	children?: ReactNode;
 }

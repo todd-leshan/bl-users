@@ -30,3 +30,11 @@ Secondary.args = {
     color: 'secondary',
     onClick: () => {},
 };
+
+
+export const Custom = Template.bind({});
+Custom.args = {
+    color: 'custom',
+    onClick: () => {},
+    className: 'bg-theme-4 text-white hover:text-primary',
+};

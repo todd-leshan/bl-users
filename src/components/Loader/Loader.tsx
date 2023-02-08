@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Loader = () => (
+export const Loader = () => (
     <div className="flex justify-center items-center">
         <div className="grid min-h-screen place-content-center">
             <div className="flex items-center gap-2 text-primary">
@@ -11,4 +11,3 @@ const Loader = () => (
         </div>
     </div>
 );
-export default Loader;

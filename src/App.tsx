@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react'
 import classNames from "classnames";
 import { useGetUsersQuery } from "./hooks/queries/useGetUsersQuery";
-import Loader from "./components/Loader/Loader";
-import {Container} from "./components/Container/Container";
+import { Loader } from "./components/Loader/Loader";
+import { Container } from "./components/Container/Container";
 import { Icon, IconsName } from "./components/Icon/Icon";
 import { Button } from "./components/Button/Button";
 import {User} from "./types/user";
